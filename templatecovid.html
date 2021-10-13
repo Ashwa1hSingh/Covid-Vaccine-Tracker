@@ -1,0 +1,54 @@
+<!DOCTYPE html lang = en>
+<Title> Covid Vaccine tracker</Title>
+<center><h1 style = "background-color: aqua;" >Welcome to the Covid vaccine tracker </h1></center>
+<br>
+<section>
+    <style> 
+        #leftbox {
+            float:left; 
+            background:azure;
+            width:25%;
+            height:280px;
+        }
+        #middlebox{
+            float:left; 
+            background:azure;
+            width:50%;
+            height:280px;
+        }
+        #rightbox{
+            float:right;
+            background:azure;
+            width:25%;
+            height:280px;
+        }
+        h1{
+            color:black;
+            text-align:center;
+        }
+    </style> 
+    <div id  = "leftbox">
+    <h2> Options of Vaccines</h2>
+    <p> There are there main options: <br> 1. covisheild <br> 2. Covaxin <br> 3. Sputnik V </p>
+    </section>
+</div>
+  <div id = "rightbox">
+    <section>
+    <h2> Normal Reactions to Vaccine</h2>
+    <p> Arm pain <br> Head pain <br> Slight Fever</p>
+</section>
+</div>
+<div id = "middlebox">
+<center><form id = "data" action = "http://127.0.0.1:8000/myform" method = "GET"> 
+    Please enter the pincode : <input type = "text" maxlength = "6" placeholder="000000" name = "pin"> 
+    <br>
+    <br>
+    Please enter the data: <input type = "text" maxlength = "10" placeholder = "dd/mm/yyyy" name = "d">
+    <br>
+    <br>
+    <button type = "submit">Check Availability</button>     
+</form>
+</center>
+</div>
+
+</html> 
